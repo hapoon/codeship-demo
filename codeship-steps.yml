@@ -14,7 +14,7 @@
     - name: list
       command: ls -l
     - name: upload_report
-      command: bash -c "curl -s https://codecov.io/bash"
+      command: bash -c "bash <(curl -s https://codecov.io/bash)"
 - name: example_tagged_step
   tag: master
   service: codeship_example
