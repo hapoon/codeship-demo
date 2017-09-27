@@ -1,4 +1,4 @@
-- type: parallel
+- type: serial
   name: example_parallel_step
   steps:
     - service: codeship_example
