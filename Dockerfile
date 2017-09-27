@@ -1,10 +1,11 @@
-FROM alpine:edge
+FROM golang:alpine
 
-RUN mkdir /usr/local/demo \
+RUN mkdir /go/src/app \
     && apk add --no-cache bash \
         curl \
+        gcc \
         make
-WORKDIR /usr/local/demo
+WORKDIR /go/src/app
 
 COPY . .
 

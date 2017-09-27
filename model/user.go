@@ -6,7 +6,7 @@ import (
 
 // User has information of name,age...
 type User struct {
-	name string
+	Name string
 	Age  uint
 }
 
@@ -15,5 +15,6 @@ func (u *User) SetName(name string) error {
 	if len(name) == 0 {
 		return fmt.Errorf("name is empty")
 	}
+	u.Name = name
 	return nil
 }
