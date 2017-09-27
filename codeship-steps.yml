@@ -8,13 +8,7 @@
 - type: serial
   name: example_unit_test
   service: codeship_example
-  steps:
-    - name: unit_test
-      command: make test
-    - name: list
-      command: ls -l
-    - name: upload_report
-      command: bash -c "bash <(curl -s https://codecov.io/bash)"
+  command: make codecov
 - name: example_tagged_step
   tag: master
   service: codeship_example

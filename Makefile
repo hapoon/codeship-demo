@@ -11,3 +11,7 @@ test:
 			rm profile.out; \
 		fi \
 	done
+
+.PHONY: codecov
+codecov: test
+	curl -s https://codecov.io/bash | bash -s - -t $(CODECOV_TOKEN)
