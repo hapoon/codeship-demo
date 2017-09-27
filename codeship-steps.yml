@@ -4,11 +4,10 @@
     - service: codeship_example
       command: printenv
     - service: codeship_example
-      command: make test
-    - service: codeship_example
       command: ls
-    - service: codeship_example
-      command: bash -c "curl -s https://codecov.io/bash"
+- name: example_unit_test
+  service: codeship_example
+  command: make test && ls -l && bash -c "curl -s https://codecov.io/bash"
 - name: example_tagged_step
   tag: master
   service: codeship_example
