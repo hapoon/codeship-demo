@@ -5,6 +5,8 @@
       command: printenv
     - service: codeship_example
       command: ls
+    - service: unit_test
+      command: make test
 - name: example_tagged_step
   tag: master
   service: codeship_example
