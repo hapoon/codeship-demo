@@ -1,11 +1,12 @@
-- type: serial
+- type: parallel
   name: example_parallel_step
   steps:
     - service: codeship_example
       command: printenv
     - service: codeship_example
       command: ls
-- name: example_unit_test
+- type: serial
+  name: example_unit_test
   service: codeship_example
   steps:
     - name: unit_test
