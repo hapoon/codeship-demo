@@ -5,8 +5,7 @@
       command: printenv
     - service: codeship_example
       command: ls
-- type: serial
-  name: example_unit_test
+- name: example_unit_test
   service: codeship_example
   command: make codecov
 - name: example_tagged_step
