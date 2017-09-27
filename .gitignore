@@ -12,3 +12,8 @@
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
+
+# AES key of CODESHIP service.
+hapoon-codeship-demo.aes
+# CODESHIP's environment value.
+env

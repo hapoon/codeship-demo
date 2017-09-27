@@ -9,4 +9,6 @@
   tag: master
   service: codeship_example
   command: echo "Deploy here!"
-  
+- name: codecov
+  service: codeship_example
+  command: bash -c "curl -s https://codecov.io/bash"
